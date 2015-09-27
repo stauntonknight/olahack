@@ -1,0 +1,4 @@
+<div class="chore well">
+    <a href="link" class="titlelink">{title}</a>
+    <span class="glyphicon glyphicon-ok"></span>  
+</div>

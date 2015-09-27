@@ -1,0 +1,45 @@
+html
+    head
+        script(type="text/javascript" src="/bower_components/jquery/dist/jquery.js")
+        script(type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js")
+        script(type="text/javascript" src="/bower_components/dustjs/dist/dust-full-0.3.0.js")
+        script(type="text/javascript" src="/bower_components/dustjs-helpers/dist/dust-helpers.js")
+        script(type="text/javascript" src="/bower_components/dustjs/dist/dust-full-0.3.0.js")
+        script(type="text/javascript" src="/bower_components/toastr/toastr.js")
+        script(type="text/javascript" src="/client/views/templates.js")
+        script(type="text/javascript" src="all.js")
+        link(rel='stylesheet', href='/stylesheets/out.css')
+        link(rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css")
+        link(rel="stylesheet" href="/bower_components/toastr/toastr.css")
+        link(rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.css")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+        link(href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet')
+        body
+            button#oauthrefresh.
+                OAuth Refresh
+            .container-fluid#app
+                .row
+                    #scheduled.col-md-3.well
+                        h3 Fetching the tasks...
+                        i.fa.fa-spinner.fa-pulse
+                    #content.col-md-5.jumbotron
+                        h1.text-center.heading OLA TASKS
+                        form.col-lg-12#mainform(action='#')
+                            .input-group.maininput
+                                input#task.task.form-control.input-lg(placeholder="Type a query")
+                                span.input-group-btn
+                                    button#submit.btn.btn-primary.btn-lg.
+                                        Submit
+                        button#addchorebut.btn.btn-primary.btn-lg.
+                            Add Chore
+                        div.addchore.well.text.center
+                            input#addchoretitle.ta5pxsk.form-control.input-lg(placeholder="Title")
+                            input#addchorelink.task.form-control.input-lg(placeholder="Link")
+                            input#addchoreduration.task.form-control.input-lg(placeholder="Duration")
+                            button#doneaddchore.btn.btn-primary.btn-lg.
+                                Done
+                            button#discardaddchore.btn.btn-primary.btn-lg.
+                                Discard
+                    #chores.col-md-3.well
+                        i.fa.fa-spinner.fa-pulse
+

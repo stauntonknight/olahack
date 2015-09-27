@@ -1,0 +1,2 @@
+!function(){function e(e,i){return e.write('<div class="chore well"><a href="link" class="titlelink">').reference(i.get(["title"],!1),i,"h").write('</a><span class="glyphicon glyphicon-ok"></span>  </div>')}return dust.register("choreview",e),e}();
+;!function(){function e(e,t){return e.write('<div class="event well"><div class="title">').reference(t.get(["title"],!1),t,"h").write("</div></div>")}return dust.register("event",e),e}();
